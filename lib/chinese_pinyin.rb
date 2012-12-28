@@ -49,7 +49,7 @@ class Pinyin
           results << splitter
           is_english = false
         else
-          results <<  char
+          results <<  char if char != ' '
           is_english = true
         end
       end
